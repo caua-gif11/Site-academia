@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Treinos da Semana</title>
+
+    <style>
+        /* ===== BASE ===== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: #fff;
+        }
+
+        /* ===== BOTÃO VOLTAR ===== */
+        .btn-voltar {
+            display: inline-block;
+            margin: 20px;
+            padding: 12px 25px;
+            background: #c40000;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn-voltar:hover {
+            background: #ff1a1a;
+            transform: scale(1.05);
+        }
+
+        /* ===== TREINOS ===== */
+        .treinos {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .treinos h2 {
+            color: #ff1a1a;
+            font-size: 36px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        /* ===== TABELA ===== */
+        .treinos table {
+            width: 90%;
+            margin: auto;
+            background: #141414;
+            border-radius: 15px;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.25);
+        }
+
+        .treinos th {
+            background: #c40000;
+            color: #fff;
+            padding: 18px;
+            font-size: 18px;
+        }
+
+        .treinos td {
+            padding: 18px;
+            color: #eee;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .treinos tr:last-child td {
+            border-bottom: none;
+        }
+
+        .treinos tr:hover {
+            background: #1f1f1f;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="btn-voltar">← Voltar</a>
+
+    <section id="treinos" class="treinos">
+        <h2>Treinos da Semana</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Treino</th>
+                    <th>Grupos Musculares</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>Treino A</td>
+                    <td>Peito + Tríceps</td>
+                </tr>
+
+                <tr>
+                    <td>Terça-feira</td>
+                    <td>Treino B</td>
+                    <td>Costas + Bíceps</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>Treino C</td>
+                    <td>Pernas + Glúteos</td>
+                </tr>
+
+                <tr>
+                    <td>Quinta-feira</td>
+                    <td>Treino D</td>
+                    <td>Ombros + Abdômen</td>
+                </tr>
+
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>Treino E</td>
+                    <td>Full Body + Cardio</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

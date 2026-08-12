@@ -1,0 +1,1 @@
+.card-link { text-decoration: none; color: inherit; } .card { background: #1a1a1a; border-radius: 10px; overflow: hidden; cursor: pointer; transition: transform 0.3s; } .card:hover { transform: scale(1.05); }

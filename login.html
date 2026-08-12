@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Catraca Digital</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.catraca{
+background:#141414;
+padding:40px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 20px rgba(255,0,0,0.4);
+width:320px;
+}
+
+h1{
+color:#ff0000;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#c40000;
+color:white;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff1a1a;
+}
+
+.erro{
+color:#ff4444;
+margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="catraca">
+
+<h1>Catraca Digital</h1>
+
+<input type="text" id="usuario" placeholder="Usuário">
+<input type="password" id="senha" placeholder="Senha">
+
+<button onclick="entrar()">Entrar</button>
+
+<p id="mensagem" class="erro"></p>
+
+</div>
+
+<script>
+
+function entrar(){
+
+let usuario = document.getElementById("usuario").value
+let senha = document.getElementById("senha").value
+
+if(usuario === "aluno" && senha === "1234"){
+
+window.location.href = "index.html"
+
+}else{
+
+document.getElementById("mensagem").innerText="Acesso negado"
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
