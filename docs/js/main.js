@@ -5,7 +5,7 @@ function initStatic(){ $('#modality-grid').innerHTML=modalities.map(([name,desc,
 function boot(){
   // Keep one optional feature from preventing the rest of the page from starting.
   for(const [name,start] of [['interface',initUI],['sections',initStatic],['workouts',initWorkouts],['signup',initSignup],['calculators',initCalculators],['3D scene',initScene],['animations',initAnimations]]){
-    try{start()}catch(error){console.error(`IRON PULSE: failed to initialize ${name}`,error);toast(`Falha ao iniciar ${name}. Atualize a página.`)}
+    try{start()}catch(error){console.error(`IRON PULSE: failed to initialize ${name}`,error);const detail=name==='sections'?` — ${window.__ironInitPhase}: ${error?.message||error}`:'';toast(`Falha ao iniciar ${name}${detail}.`)}
   }
   $('#preloader')?.classList.add('done');
 }
