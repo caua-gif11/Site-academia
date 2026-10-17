@@ -3,3 +3,6 @@
 @media(max-width:380px){.modality-grid,.trainer-grid{grid-template-columns:1fr}.modality-card{height:180px}.hero{min-height:800px}.hero-actions .text-link{width:100%}.step span{letter-spacing:0}.stats-grid strong{font-size:35px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.cursor-glow{display:none}}
 @media(hover:none){.cursor-glow{display:none}}
+/* Keep the weekly heading and its filter on separate rows on narrow screens. */
+@media(max-width:680px){.schedule .section-heading{display:block;align-items:initial;gap:0}.schedule select{width:min(100%,220px);margin-top:18px}}
+@media(max-width:380px){.section-heading h2{font-size:clamp(3.1rem,15vw,3.4rem)}.schedule select{width:100%}}
